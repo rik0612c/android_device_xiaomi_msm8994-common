@@ -143,9 +143,6 @@ WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY ?= true
 # Added to indicate that protobuf-c is supported in this build
 PROTOBUF_SUPPORTED := true
 
-# Disable HW based full disk encryption
-TARGET_HW_DISK_ENCRYPTION := false
-
 # Enable peripheral manager
 TARGET_PER_MGR_ENABLED := true
 

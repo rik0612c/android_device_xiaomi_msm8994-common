@@ -12,7 +12,6 @@ TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 
 # Platform
 TARGET_NO_BOOTLOADER := true
-TARGET_BOARD_SUFFIX := _64
 
 # Properties
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop

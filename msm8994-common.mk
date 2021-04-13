@@ -107,7 +107,7 @@ PRODUCT_PACKAGES += \
     libbt-vendor \
     android.hardware.bluetooth@1.0-impl \
     audio.bluetooth.default \
-    android.hardware.bluetooth.audio@2.0-impl
+    android.hardware.bluetooth.audio@2.1-impl
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \

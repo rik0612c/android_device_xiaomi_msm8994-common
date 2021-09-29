@@ -21,6 +21,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.ebpf.supported=false
 
+# SoC
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.soc.manufacturer=Qualcomm \
+    ro.soc.model=MSM8994
+
 # Start in TD-SCDMA, GSM/WCDMA and LTE mode
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=10 \

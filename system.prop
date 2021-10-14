@@ -1,14 +1,15 @@
-rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
-rild.libargs=-d[SPACE]/dev/smd0
+# RIL
+vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
+vendor.rild.libargs=-d /dev/smd0
 persist.rild.nitz_plmn=""
-persist.rild.nitz_long_ons_0=""
-persist.rild.nitz_long_ons_1=""
-persist.rild.nitz_long_ons_2=""
-persist.rild.nitz_long_ons_3=""
-persist.rild.nitz_short_ons_0=""
-persist.rild.nitz_short_ons_1=""
-persist.rild.nitz_short_ons_2=""
-persist.rild.nitz_short_ons_3=""
+persist.rild.nitz_long_ons_0=
+persist.rild.nitz_long_ons_1=
+persist.rild.nitz_long_ons_2=
+persist.rild.nitz_long_ons_3=
+persist.rild.nitz_short_ons_0=
+persist.rild.nitz_short_ons_1=
+persist.rild.nitz_short_ons_2=
+persist.rild.nitz_short_ons_3=
 ril.subscription.types=NV,RUIM
 persist.sys.ssr.restart_level=ALL_ENABLE
 persist.sys.ssr.enable_ramdumps=1

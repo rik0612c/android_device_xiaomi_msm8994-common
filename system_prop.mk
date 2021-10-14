@@ -17,6 +17,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.multisim.config=dsds \
     DEVICE_PROVISIONED=1
 
+# BPF
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.kernel.ebpf.supported=false
+
 # Start in TD-SCDMA, GSM/WCDMA and LTE mode
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=10 \

@@ -31,6 +31,7 @@ ro.telephony.default_cdma_sub=0
 
 debug.sf.hw=1
 debug.egl.hw=1
+debug.renderengine.backend=threaded
 debug.sf.latch_unsignaled=1
 debug.sf.disable_backpressure=1
 debug.sf.enable_gl_backpressure=1

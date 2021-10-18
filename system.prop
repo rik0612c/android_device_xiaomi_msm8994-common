@@ -257,3 +257,6 @@ dalvik.vm.systemuicompilerfilter=speed
 
 # Stop the QC-QMI message spam
 persist.data.qmi.adb_logmask=0
+
+# Don't write binary XML files
+persist.sys.binary_xml=false

@@ -303,3 +303,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     ueventd.qcom.rc \
     init.qcom.post_boot.sh
+    
+# Shim for S
+PRODUCT_PACKAGES += \
+    libshims_thermal

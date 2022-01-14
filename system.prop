@@ -43,7 +43,7 @@ ro.telephony.default_cdma_sub=0
 # Graphics
 debug.sf.hw=1
 debug.egl.hw=1
-debug.renderengine.backend=threaded
+debug.renderengine.backend=gles
 debug.sf.enable_gl_backpressure=1
 debug.composition.type=c2d
 persist.hwc.mdpcomp.enable=true

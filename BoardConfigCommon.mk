@@ -102,7 +102,7 @@ BOARD_RAMDISK_OFFSET     := 0x01000000
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-SELINUX_IGNORE_NEVERALLOWS := true
+TARGET_KERNEL_CLANG_COMPILE := false
 
 # Partition
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864 #64M
@@ -214,6 +214,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 # SELinux
 include device/qcom/sepolicy-legacy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Shims
 TARGET_LD_SHIM_LIBS += /system/vendor/lib64/libril-qc-qmi-1.so|rild_socket.so:/system/vendor/lib/libmmcamera2_stats_algorithm.so|libshim_atomic.so:/system/vendor/lib64/libizat_core.so|libshims_get_process_name.so:/system/vendor/lib64/libril-qc-qmi-1.so|libaudioclient_shim.so

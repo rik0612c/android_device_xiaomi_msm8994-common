@@ -172,9 +172,6 @@ vendor/lib/libllvm-qcom.so|ab8604edbedb9db19ac9f0cfbeb4473adf20b2c5
 vendor/lib/libllvm-qgl.so|ffd2e9c41d8976bf259b6463a1690a516daa458f
 vendor/lib/libmm-disp-apis.so
 vendor/lib/libOpenCL.so
-vendor/lib/librs_adreno.so|bb1d5cb84f14ed18fcbfb4815692cb196e44f180
-vendor/lib/librs_adreno_sha1.so|be8a817743950dac6e22b50cbd9657c2d35c35f2
-vendor/lib/libRSDriver_adreno.so|ee3386248adfa7d1a8c1107e051bcbbd3e8df0c1
 vendor/lib/libscale.so|9c1044395f1a93b10d3f85ce3123a73676b1bac5
 vendor/lib64/egl/eglSubDriverAndroid.so|03e2c66eebed80a91b08e2c18d011844682bdd7b
 vendor/lib64/egl/libEGL_adreno.so|3193346e9938e05ce611db0d0f9e456009289ebd
@@ -194,9 +191,6 @@ vendor/lib64/libllvm-qcom.so|10fe39e71615629bb5af03794fd0a970f4b700fc
 vendor/lib64/libllvm-qgl.so|192a30d29c1f0c5e2a6f38ca3df58118be85f346
 vendor/lib64/libmm-disp-apis.so
 vendor/lib64/libOpenCL.so
-vendor/lib64/librs_adreno.so|18e913b6d8f79e4b8563a8c8a0b2475e609d4813
-vendor/lib64/librs_adreno_sha1.so|ef430803f5b7623d774166d7c6130012f5f24845
-vendor/lib64/libRSDriver_adreno.so|05d94ad793ba74c1f6635762eb7871a611001c9c
 vendor/lib64/libscale.so|248355dab3b68ad2fa320b173580cdf9410bdc66
 
 # GPU firmware

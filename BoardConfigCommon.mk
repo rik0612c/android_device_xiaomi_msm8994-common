@@ -14,8 +14,8 @@ TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_SUFFIX := _64
 
 # Properties
-TARGET_SYSTEM_PROP += $(VENDOR_PATH)/system.prop
-TARGET_PRODUCT_PROP += $(VENDOR_PATH)/product.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
 
 # Arch
 TARGET_ARCH := arm64

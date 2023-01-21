@@ -134,6 +134,7 @@ ro.qualcomm.bluetooth.map=true
 bluetooth.enable_timeout_ms=12000
 ro.bt.bdaddr_path=/data/misc/bluetooth/bdaddr
 bluetooth.le.disable_apcf_extended_features=1
+bluetooth.sco.disable_enhanced_connection=1
 vendor.qcom.bluetooth.soc=rome
 ro.bluetooth.wipower=true
 ro.bluetooth.emb_wp_mode=true

@@ -7,8 +7,7 @@ $(call inherit-product-if-exists, vendor/xiaomi/msm8994-common/msm8994-common-ve
 -include $(LOCAL_PATH)/system_prop.mk
 
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -192,10 +191,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_msm8994
 
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-legacymm
-
 # OMX
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
@@ -260,10 +255,6 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     timekeep \
     TimeKeep
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
 
 # USB HAL
 PRODUCT_PACKAGES += \

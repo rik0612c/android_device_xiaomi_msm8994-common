@@ -90,17 +90,11 @@ media.stagefright.log-uri=1
 
 vidc.debug.level=1
 
-# Additional i/p buffer in case of encoder DCVS
-vidc.enc.dcvs.extra-buff-count=2
-
 # system props for the data modules
 ro.use_data_netmgrd=true
 persist.data.netmgrd.qos.enable=true
 persist.data.mode=concurrent
 ro.data.large_tcp_window_size=true
-
-#system props for time-services
-persist.timed.enable=true
 
 # system prop for opengles version
 # 196608 is decimal for 0x30000 to report major/minor versions as 3/0
@@ -109,41 +103,25 @@ persist.timed.enable=true
 ro.opengles.version=196610
 
 # System property for cabl
-
 ro.qualcomm.cabl=0
-# System property for AD
-
-ro.qcom.ad=1
-ro.qcom.ad.calib.data=/system/etc/calib.cfg
-ro.qcom.ad.sensortype=2
+ro.vendor.display.cabl=2
 
 # Display feature support
 # bit0-ColorPrefer bit1-EyeCare bit2-AD bit3-CE bit4-CABC bit5-SRGB
 
-#
-# System props for telephony
+# telephony
 # System prop to turn on CdmaLTEPhone always
-
 telephony.lteOnCdmaDevice=1
 
-# System props for bluetooth
-# System prop to turn on hfp client
+# Bluetooth
 bluetooth.hfp.client=1
-ro.bt.bdaddr_path=/data/misc/bluetooth/bdaddr
 ro.qualcomm.bluetooth.opp=true
 ro.qualcomm.bluetooth.hfp=true
 ro.qualcomm.bluetooth.hsp=true
 ro.qualcomm.bluetooth.pbap=true
 ro.qualcomm.bluetooth.ftp=true
 ro.qualcomm.bluetooth.nap=true
-ro.bluetooth.sap=true
-ro.bluetooth.dun=true
 ro.qualcomm.bluetooth.map=true
-ro.bluetooth.hfp.ver=1.6
-
-# Set Bluetooth transport
-# initialization timeout
-
 bluetooth.enable_timeout_ms=12000
 
 #Simulate sdcard on /data/media
@@ -153,7 +131,6 @@ persist.fuse_sdcard=true
 vendor.qcom.bluetooth.soc=rome
 
 #system prop for wipower support
-
 ro.bluetooth.wipower=true
 
 #Set this true as ROME which is programmed
@@ -200,9 +177,6 @@ audio.offload.track.enable=false
 #Enable music through deep buffer
 audio.deep_buffer.media=true
 
-#property to enable VDS WFD solution
-persist.hwc.enable_vds=1
-
 #enable voice path for PCM VoIP by default
 vendor.voice.path.for.pcm.voip=true
 
@@ -217,7 +191,7 @@ persist.radio.rat_on=combine
 persist.radio.force_on_dc=true
 
 # Memory optimizations
-ro.vendor.qti.sys.fw.bservice_enable=true
+vendor.vidc.enc.disable.pq=true
 
 #Enable short oos enhancement
 ro.sys.oosenhance.enable=true
@@ -226,7 +200,6 @@ ro.sys.oosenhance.timer=20000
 # button jack mode & switch
 persist.sys.button_jack_profile=volume
 persist.sys.button_jack_switch=0
-
 
 persist.sys.mcd_config_file=/system/etc/mcd_default.conf
 persist.sys.klo=on
@@ -239,10 +212,6 @@ persist.radio.sib16_support=1
 ro.frp.pst=/dev/block/bootdevice/by-name/config
 af.fast_track_multiplier=1
 vendor.audio_hal.period_size=192
-ro.btconfig.if=uart
-ro.btconfig.dev=/dev/ttyHS0
-ro.btconfig.vendor=qcom
-ro.btconfig.chip=QCA6164
 persist.power.useautobrightadj=true
 persist.radio.apm_sim_not_pwdn=1
 

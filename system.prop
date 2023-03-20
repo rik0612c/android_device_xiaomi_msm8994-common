@@ -28,6 +28,9 @@ ro.soc.model=MSM8994
 ro.telephony.default_network=10
 ro.telephony.default_cdma_sub=0
 
+# QPR2 Bluetooth Fix by 0xCAFEBABE
+bluetooth.le.disable_apcf_extended_features=1
+
 # Graphics
 debug.sf.hw=1
 debug.egl.hw=1

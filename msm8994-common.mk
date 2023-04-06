@@ -119,7 +119,8 @@ PRODUCT_PACKAGES += \
 # Dummy hidl lib for oreo blobs
 PRODUCT_PACKAGES += \
     libhidltransport \
-    libhwbinder
+    libhwbinder \
+    libhwbinder.vendor
 
 # GPS
 PRODUCT_PACKAGES += \

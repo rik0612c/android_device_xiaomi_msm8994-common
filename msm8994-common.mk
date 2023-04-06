@@ -196,6 +196,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
+    android.hardware.drm@1.4-service.clearkey \
     libc2dcolorconvert \
     libdivxdrmdecrypt \
     libdrmclearkeyplugin \
@@ -307,3 +308,22 @@ PRODUCT_PACKAGES += \
 # Shim for S
 PRODUCT_PACKAGES += \
     libshims_thermal
+    
+# Vendor HIDL
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0.vendor \
+    android.frameworks.displayservice@1.0.vendor \
+    android.hardware.drm@1.4.vendor \
+    android.hardware.gatekeeper@1.0 \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.media.c2@1.1.vendor \
+    android.hardware.neuralnetworks@1.3 \
+    android.hardware.neuralnetworks@1.3.vendor \
+    android.hardware.keymaster@3.0-service \
+    android.hardware.keymaster@4.1.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio@1.4.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.0.vendor \
+    android.system.net.netd@1.1.vendor \
+    android.hardware.gnss@2.1.vendor

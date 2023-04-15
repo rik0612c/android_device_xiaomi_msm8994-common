@@ -212,6 +212,14 @@
             <instance>cnd</instance>
         </interface>
     </hal>
+    <hal format="hidl">
+       <name>android.hardware.power.stats</name>
+       <transport>hwbinder</transport>
+       <interface>
+           <name>IPowerStats</name>
+           <instance>default</instance>
+       </interface>
+    </hal>
     <sepolicy>
         <version>0.0</version>
     </sepolicy>

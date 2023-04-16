@@ -110,16 +110,12 @@ PRODUCT_PACKAGES += \
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
-    cneapiclient \
-    com.quicinc.cne \
-    libcnefeatureconfig \
-    services-ext
+    libcnefeatureconfig
 
 # Dummy hidl lib for oreo blobs
 PRODUCT_PACKAGES += \
     libhidltransport \
-    libhwbinder \
-    libhwbinder.vendor
+    libhwbinder
 
 # Display Device Config
 PRODUCT_COPY_FILES += \
@@ -132,7 +128,6 @@ PRODUCT_PACKAGES += \
     gps.conf \
     izat.conf \
     lowi.conf \
-    quipc.conf \
     sap.conf \
     xtwifi.conf
     
@@ -153,7 +148,6 @@ PRODUCT_PACKAGES += \
     memtrack.$(BOARD_PLATFORM) \
     liboverlay \
     libtinyxml \
-    libgenlock \
     android.hardware.configstore@1.1-service \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
@@ -166,11 +160,6 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
-
-# IPv6
-PRODUCT_PACKAGES += \
-    ebtables \
-    ethertypes
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -202,7 +191,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.4-service.clearkey \
     libc2dcolorconvert \
-    libdivxdrmdecrypt \
     libdrmclearkeyplugin \
     libmm-omxcore \
     libOmxAacEnc \
@@ -211,7 +199,6 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxQcelp13Enc \
     libOmxVdec \
-    libOmxVdecHevc \
     libOmxVenc \
     libstagefrighthw
 
@@ -247,7 +234,6 @@ PRODUCT_COPY_FILES += \
 
 # Telephony
 PRODUCT_PACKAGES += \
-    qti-telephony-common \
     telephony-ext
 
 PRODUCT_BOOT_JARS += \
@@ -280,13 +266,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     ipacm \
-    ipacm-diag \
     IPACM_cfg.xml \
     libqsap_sdk \
-    libQWiFiSoftApCfg \
     libwpa_client \
     hostapd \
-    dhcpcd.conf \
     readmac \
     wificond \
     wpa_supplicant \
@@ -316,17 +299,5 @@ PRODUCT_PACKAGES += \
     
 # Vendor HIDL
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0.vendor \
-    android.frameworks.displayservice@1.0.vendor \
-    android.hardware.drm@1.4.vendor \
     android.hardware.gatekeeper@1.0 \
-    android.hardware.gatekeeper@1.0.vendor \
-    android.hardware.media.c2@1.1.vendor \
-    android.hardware.neuralnetworks@1.3 \
-    android.hardware.neuralnetworks@1.3.vendor \
-    android.hardware.radio.config@1.2.vendor \
-    android.hardware.radio@1.4.vendor \
-    android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.secure_element@1.0.vendor \
-    android.system.net.netd@1.1.vendor \
-    android.hardware.gnss@2.1.vendor
+    android.hardware.neuralnetworks@1.3

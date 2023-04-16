@@ -208,9 +208,8 @@ TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_msm8994
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 
 # SELinux
-#include device/qcom/sepolicy-legacy/sepolicy.mk
-#BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
-BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy-minimal
+include device/qcom/sepolicy-legacy/sepolicy.mk
+BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
 SELINUX_IGNORE_NEVERALLOWS := true
 
 # Shims

@@ -348,7 +348,6 @@ service perfd /system/vendor/bin/perfd
    writepid /dev/cpuset/system-background/tasks
 
 on property:sys.boot_completed=1
-    restart cameraserver
     write /dev/kmsg "Boot completed "
 
 # corefile limit and ETB enabling
@@ -470,13 +469,13 @@ on property:crypto.driver.load=1
 service qcom-sh /system/vendor/bin/init.qcom.sh
     class late_start
     user root
-    seclabel u:r:qti_init_shell:s0
+    #seclabel u:r:qti_init_shell:s0
     oneshot
 
 service qcom-post-boot /system/vendor/bin/init.qcom.post_boot.sh
     class late_start
     user root
-    seclabel u:r:qti_init_shell:s0
+    #seclabel u:r:qti_init_shell:s0
     disabled
     oneshot
 
@@ -500,7 +499,7 @@ service charger /system/bin/charger
     user system
     group system graphics input
     capabilities SYS_BOOT
-    seclabel u:r:charger:s0
+    #seclabel u:r:charger:s0
     writepid /dev/cpuset/system-background/tasks
 
 service qbcharger /charger -m 1
@@ -523,7 +522,7 @@ service msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqb
 
 service mmbn-daemon /vendor/bin/mmbn-daemon
     class main
-    seclabel u:r:mmbn-daemon:s0
+    #seclabel u:r:mmbn-daemon:s0
     oneshot
 
 on property:persist.radio.modem=X7-LTE

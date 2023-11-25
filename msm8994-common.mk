@@ -95,6 +95,7 @@ PRODUCT_PACKAGES += \
     audio.primary.$(BOARD_PLATFORM) \
     audio.r_submix.default \
     audio.usb.default \
+    libaudioroute \
     libaudio-resampler \
     libqcompostprocbundle \
     libqcomvisualizer \
@@ -191,6 +192,7 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.4-service.clearkey \
     libc2dcolorconvert \
+    libminijail:32 \
     libdrmclearkeyplugin \
     libmm-omxcore \
     libOmxAacEnc \

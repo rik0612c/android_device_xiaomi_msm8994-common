@@ -16,6 +16,7 @@ TARGET_NO_BOOTLOADER := true
 # Properties
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 # Arch
 TARGET_ARCH := arm64

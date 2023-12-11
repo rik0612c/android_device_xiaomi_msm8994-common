@@ -124,6 +124,7 @@ ro.data.large_tcp_window_size=true
 # 196609 is decimal for 0x30001 to report major/minor versions as 3/1
 
 ro.opengles.version=196610
+ro.hardware.egl=adreno
 
 # System property for cabl
 ro.qualcomm.cabl=0

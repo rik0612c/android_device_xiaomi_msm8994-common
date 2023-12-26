@@ -189,9 +189,6 @@ ro.frp.pst=/dev/block/bootdevice/by-name/config
 af.fast_track_multiplier=1
 persist.power.useautobrightadj=true
 
-# VNDK
-ro.vndk.version=current
-
 # Dex2oat limits
 dalvik.vm.boot-dex2oat-threads=4
 dalvik.vm.dex2oat-threads=2
@@ -211,3 +208,6 @@ debug.sf.layer_caching_active_layer_timeout_ms=1000
 debug.sf.recomputecrop=0
 persist.sys.fuse.transcode_user_control=true
 persist.sys.fuse.transcode_enabled=false
+
+# Filesystem
+fs_mgr.overlayfs.prefer_cache_backing_storage=true

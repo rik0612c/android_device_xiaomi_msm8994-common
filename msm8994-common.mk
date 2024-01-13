@@ -91,6 +91,8 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.audio@5.0-impl \
     android.hardware.audio.effect@5.0-impl \
+    android.hardware.soundtrigger@2.2 \
+    android.hardware.soundtrigger@2.2-core \
     android.hardware.soundtrigger@2.2-impl \
     audio.primary.$(BOARD_PLATFORM) \
     audio.r_submix.default \
@@ -168,7 +170,10 @@ PRODUCT_PACKAGES += \
     camera.device@1.0-impl \
     android.hardware.camera.provider@2.4-impl \
     libshim_atomic \
-    libshim_camera
+    libshim_camera \
+    libyuv \
+    libexif \
+    Aperture
 
 # Keystore
 PRODUCT_PACKAGES += \

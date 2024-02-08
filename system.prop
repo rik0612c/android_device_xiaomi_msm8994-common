@@ -169,6 +169,13 @@ vendor.voice.path.for.pcm.voip=true
 
 persist.debug.coresight.config=stm-events
 
+# LMKD
+ro.lmk.kill_heaviest_task=true
+ro.lmk.use_psi=true
+ro.lmk.use_minfree_levels=false
+ro.lmk.thrashing_limit_decay=50
+ro.lmk.downgrade_pressure=30
+
 # Memory optimizations
 vendor.vidc.enc.disable.pq=true
 

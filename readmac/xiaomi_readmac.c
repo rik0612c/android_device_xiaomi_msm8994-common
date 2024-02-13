@@ -19,8 +19,9 @@
 #define LOG_TAG "xiaomi_readmac"
 
 #include <string.h>
-#include <cutils/log.h>
+#include <log/log.h>
 #include <errno.h>
+#include <stdio.h>
 
 #define XIAOMI_OUI_LIST_SIZE       41
 #define MAC_ADDR_SIZE              6

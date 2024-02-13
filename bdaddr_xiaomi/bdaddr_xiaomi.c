@@ -17,9 +17,10 @@
 #define LOG_TAG "bdaddr_xiaomi"
 #define LOG_NDEBUG 0
 
-#include <cutils/log.h>
+#include <log/log.h>
 
 #include <string.h>
+#include <stdio.h>
 
 #define MAC_ADDR_SIZE 6
 #define BD_ADDR_FILE "/data/misc/bluetooth/bdaddr"

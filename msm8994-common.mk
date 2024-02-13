@@ -92,7 +92,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@5.0-impl \
     android.hardware.audio.effect@5.0-impl \
     android.hardware.soundtrigger@2.2 \
-    android.hardware.soundtrigger@2.2-core \
     android.hardware.soundtrigger@2.2-impl \
     audio.primary.$(BOARD_PLATFORM) \
     audio.r_submix.default \
@@ -277,7 +276,6 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     ipacm \
     IPACM_cfg.xml \
-    libqsap_sdk \
     libwpa_client \
     hostapd \
     readmac \

@@ -213,7 +213,10 @@ SELINUX_IGNORE_NEVERALLOWS := true
 BOARD_SEPOLICY_M4DEFS += \
     hal_perf_default=vendor_hal_perf_default \
     hal_perf_hwservice=vendor_hal_perf_hwservice \
-    hal_perf_default_exec=vendor_hal_perf_default_exec
+    hal_perf_default_exec=vendor_hal_perf_default_exec \
+    location=vendor_location \
+    location_socket=vendor_location_socket \
+    location_exec=vendor_location_exec
 
 # Shims
 TARGET_LD_SHIM_LIBS += \
